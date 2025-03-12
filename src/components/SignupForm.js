@@ -40,7 +40,7 @@ const SignupForm = ({setIsLoggedIn}) => {
         }
         console.log("Finally");
         console.log(finalData);
-        navigate("/dashboard");
+        navigate("/study-notion/dashboard");
     }
   return (
     <div>

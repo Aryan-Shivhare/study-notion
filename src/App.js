@@ -13,10 +13,10 @@ function App() {
     <div className="w-screen min-h-screen bg-richblack-900 flex flex-col">
       <Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}/>
       <Routes>
-        <Route path="/" element={<Home isLoggedIn={isLoggedIn}/>}/>
-        <Route path="/signup" element={<Signup setIsLoggedIn={setIsLoggedIn}/>}/>
-        <Route path="/login" element={<Login setIsLoggedIn={setIsLoggedIn}/>}/>
-        <Route path="/dashboard" element={
+        <Route path="/study-notion" element={<Home isLoggedIn={isLoggedIn}/>}/>
+        <Route path="/study-notion/signup" element={<Signup setIsLoggedIn={setIsLoggedIn}/>}/>
+        <Route path="/study-notion/login" element={<Login setIsLoggedIn={setIsLoggedIn}/>}/>
+        <Route path="/study-notion/dashboard" element={
           <PrivateRoute isLoggedIn={isLoggedIn}>
             <Dashboard/>
           </PrivateRoute>
